@@ -16,6 +16,7 @@ public class DoMath {
 		System.out.println(Calculate.toImproperFrac(2, 1, 3));
 		System.out.println(Calculate.toMixedNum(7, 2));
 		System.out.println(Calculate.foil(2, 3, 6, -7));
+		System.out.println(Calculate.isDivisibleBy(4, 2));
 	}
 
 }

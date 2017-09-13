@@ -131,6 +131,24 @@ public class Calculate {
 	/*rounds a double correctly to 2 decimal places and returns a double
 	 */
 	public static double round2(double value) {
-		if 
-		}
+		value*=100;
+		value+=0.5;
+		int number = (int)value;
+		double doubledValue = (double)number;
+		doubledValue*=0.01;
+		return doubledValue;
 	}
+/*Part 3: Methods that use Loops and Calls to Other Methods
+* raises a value to a positive integer power
+* accepts a double and an integer and returns a double
+* assume exponent is positive
+*/
+	public static double exponent(double value, int exponent) {
+		double newNum = 1;
+		for(int i = 0; i < exponent; i++) {	
+			newNum *= value;
+		}
+		return newNum;
+	}
+}
+
